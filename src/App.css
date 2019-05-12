@@ -1,0 +1,15 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100rem;
+  margin: 10rem auto;
+}
+
+.heading-1 {
+  font-size: 5rem;
+  margin-bottom: 7rem;
+  text-transform: uppercase;
+
+}
