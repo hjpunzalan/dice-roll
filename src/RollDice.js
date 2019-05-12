@@ -22,16 +22,19 @@ class RollDice extends Component {
     }
 
     changeNumber() {
-        const firstNumber = this.randomNumber();
-        this.setState({firstDie: firstNumber});
-        const secondNumber = this.randomNumber();
-        this.setState({ secondDie: secondNumber });
-
+        
         this.addAnimation();
         setTimeout(() => {
             this.removeAnimation();
         }, 1000);
-
+        
+        setTimeout(() => {
+            const firstNumber = this.randomNumber();
+            this.setState({firstDie: firstNumber});
+            const secondNumber = this.randomNumber();
+            this.setState({ secondDie: secondNumber });
+            
+        }, 700);
     }
 
     addAnimation = () => {
